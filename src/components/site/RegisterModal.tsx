@@ -62,11 +62,11 @@ export function RegisterModal() {
               className="px-6 py-6 grid gap-4"
             >
               <div className="grid sm:grid-cols-2 gap-4">
-                <Field label="Full Name"><input required className={inputCls} placeholder="Jane Doe" /></Field>
+                <Field label="Full Name"><input required className={inputCls} placeholder="Onyango Michael" /></Field>
                 <Field label="Email Address"><input required type="email" className={inputCls} placeholder="you@kisiiuniversity.ac.ke" /></Field>
               </div>
               <div className="grid sm:grid-cols-2 gap-4">
-                <Field label="Phone Number"><input required className={inputCls} placeholder="+254 ..." /></Field>
+                <Field label="Phone Number"><input required className={inputCls} placeholder="0741145911" /></Field>
                 <Field label="Course / Department"><input required className={inputCls} placeholder="BSc Computer Science" /></Field>
               </div>
               <div className="grid sm:grid-cols-2 gap-4">

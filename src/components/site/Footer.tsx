@@ -51,7 +51,7 @@ export function Footer() {
           <ul className="space-y-3 text-sm">
             <li className="flex items-start gap-2"><MapPin size={16} className="mt-0.5 text-brand-red" /> Kisii University, Main Campus</li>
             <li className="flex items-start gap-2"><Mail size={16} className="mt-0.5 text-brand-red" /> ajira@kisiiuniversity.ac.ke</li>
-            <li className="flex items-start gap-2"><Phone size={16} className="mt-0.5 text-brand-red" /> +254 700 000 000</li>
+            <li className="flex items-start gap-2"><Phone size={16} className="mt-0.5 text-brand-red" /> 0741145911</li>
           </ul>
         </div>
       </div>

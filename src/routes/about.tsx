@@ -24,6 +24,7 @@ const team = [
   { role: "Events Organizer", name: "Kyalo Benson" },
   { role: "Membership & Engagement Lead", name: "Earnest Kethi" },
   { role: "Treasurer", name: "Ann Muchiri" },
+  { role: "Trainer of Trainees", name: "Evelyne Njambi" },
 ];
 
 function initials(name: string) {
