@@ -2,10 +2,10 @@
   "version": 2,
   "buildCommand": "npm run build",
   "outputDirectory": "dist/client",
-  "rewrites": [
+  "routes": [
     {
-      "source": "/:path((?!api|.*\\.).*)",
-      "destination": "/index.html"
+      "src": "^/(?!.*\\.)(.*)$",
+      "dest": "/api/[...route]"
     }
   ]
 }
