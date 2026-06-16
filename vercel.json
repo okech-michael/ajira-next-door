@@ -1,24 +1,26 @@
 {
   "version": 2,
-  "buildCommand": "npm ci && node ./scripts/fix-start-server-core.js && npm run build",
-  "outputDirectory": "dist",
-  "env": {
-    "NODE_ENV": "production"
-  },
-  "functions": {
-    "dist/server/server.js": {
-      "memory": 1024,
-      "maxDuration": 60
-    }
-  },
-  "rewrites": [
+  "builds": [
     {
-      "source": "/assets/:path*",
-      "destination": "/assets/:path*"
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist/client"
+      }
     },
     {
-      "source": "/(.*)",
-      "destination": "/dist/server/server.js"
+      "src": "dist/server/server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/assets/(.*)",
+      "dest": "/dist/client/assets/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/dist/server/server.js"
     }
   ]
 }
