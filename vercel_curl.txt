@@ -1,0 +1,16 @@
+﻿node.exe : Vercel CLI 54.14.0 (Node.js 25.0.0) | curl is in beta ΓÇö 
+https://vercel.com/feedback
+At line:1 char:1
++ & "C:\nvm4w\nodejs/node.exe" "C:\nvm4w\nodejs/node_modules/npm/bin/np ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Vercel CLI 54.1...el.com/feedback 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+> You require a deployment protection bypass token to access this 
+deployment... Generating one now...
+> Successfully generated deployment protection bypass token for project 
+prj_lF0J87V6uPg2gV052qMvvGxp9kCL
+
+curl: option --scope: is unknown
+curl: try 'curl --help' for more information
