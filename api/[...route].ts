@@ -8,7 +8,8 @@ export default async (req: any, res: any) => {
     
     const protocol = req.headers['x-forwarded-proto'] || 'https';
     const host = req.headers.host || req.headers['x-forwarded-host'] || 'localhost';
-    const url = new URL(req.url, `${protocol}://${host}`);
+    const pathname = req.url || req.path || '/';
+    const url = new URL(pathname, `${protocol}://${host}`);
     
     if (!server?.fetch) {
       console.error('[API] Server fetch not found');
