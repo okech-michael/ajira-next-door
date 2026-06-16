@@ -1,7 +1,8 @@
 export default async (req: any, res: any) => {
   try {
     // Dynamically import the server on each request to ensure fresh module
-    const { default: server } = await import('../dist/server/server.js') as any;
+    // @ts-ignore - server.js is generated at build time
+    const { default: server } = await import('../dist/server/server.js');
     
     const protocol = req.headers['x-forwarded-proto'] || 'https';
     const host = req.headers.host || req.headers['x-forwarded-host'] || 'localhost';
