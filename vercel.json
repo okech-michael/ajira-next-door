@@ -4,7 +4,7 @@
   "outputDirectory": "dist/client",
   "rewrites": [
     {
-      "source": "/:path((?!_next|[^?]*\\.(?:html?|css|js|json|wasm|webp|svg|png|jpg|jpeg|gif|ico|mp4|webm|mp3|wav)).*)",
+      "source": "/:path((?!api|.*\\.).*)",
       "destination": "/index.html"
     }
   ]
