@@ -10,7 +10,6 @@ const clientDir = path.join(__dirname, '../dist/client');
 const assetsDir = path.join(clientDir, 'assets');
 
 try {
-  // Find the main JS file (the largest one, typically index-*.js)
   const files = fs.readdirSync(assetsDir);
   const jsFiles = files.filter(f => f.endsWith('.js') && f.startsWith('index'));
   const cssFiles = files.filter(f => f.endsWith('.css'));
@@ -37,9 +36,8 @@ try {
 </html>`;
   
   fs.writeFileSync(path.join(clientDir, 'index.html'), html);
-  console.log('✓ Generated index.html with correct asset paths');
-  console.log(`  Main JS: /assets/${mainJs}`);
+  console.log('✓ Generated index.html');
 } catch (error) {
-  console.error('Error generating index.html:', error.message);
+  console.error('Error:', error.message);
   process.exit(1);
 }

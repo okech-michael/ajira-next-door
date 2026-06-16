@@ -5,7 +5,7 @@ import { jsx, jsxs } from "react/jsx-runtime";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { CheckCircle2, Facebook, Instagram, Linkedin, Mail, MapPin, Menu, Phone, Twitter, X } from "lucide-react";
 //#region src/styles.css?url
-var styles_default = "/assets/styles-ClaX_daC.css";
+var styles_default = "/assets/styles-DdhnWeXc.css";
 //#endregion
 //#region src/components/site/Navbar.tsx
 var links = [
