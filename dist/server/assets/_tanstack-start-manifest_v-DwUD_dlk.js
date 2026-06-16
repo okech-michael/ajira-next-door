@@ -8,44 +8,44 @@ var tsrStartManifest = () => ({ routes: {
 			"/events",
 			"/gallery"
 		],
-		preloads: ["/assets/index-gr_uAGWQ.js"],
+		preloads: ["/assets/index-D99VzdsK.js"],
 		scripts: [{ attrs: {
 			type: "module",
 			async: !0,
-			src: "/assets/index-gr_uAGWQ.js"
+			src: "/assets/index-D99VzdsK.js"
 		} }]
 	},
 	"/": {
 		filePath: "C:/Users/HP/Desktop/Ajiraclub/src/routes/index.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/routes-7ZXrVWks.js",
-			"/assets/parallax-1SBnHhkX.js",
-			"/assets/Reveal-D7jJ20Mf.js"
+			"/assets/routes-BaBlFW9r.js",
+			"/assets/parallax-Dgul4QHz.js",
+			"/assets/Reveal-DTigf4bj.js"
 		]
 	},
 	"/about": {
 		filePath: "C:/Users/HP/Desktop/Ajiraclub/src/routes/about.tsx",
 		children: void 0,
-		preloads: ["/assets/about-CLZpRESo.js", "/assets/Reveal-D7jJ20Mf.js"]
+		preloads: ["/assets/about-CzqzqaE3.js", "/assets/Reveal-DTigf4bj.js"]
 	},
 	"/events": {
 		filePath: "C:/Users/HP/Desktop/Ajiraclub/src/routes/events.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/events-Dxj13uhG.js",
-			"/assets/parallax-1SBnHhkX.js",
+			"/assets/events-C7Xy1LrE.js",
+			"/assets/parallax-Dgul4QHz.js",
 			"/assets/g2-C1_Izx0N.js",
-			"/assets/Reveal-D7jJ20Mf.js"
+			"/assets/Reveal-DTigf4bj.js"
 		]
 	},
 	"/gallery": {
 		filePath: "C:/Users/HP/Desktop/Ajiraclub/src/routes/gallery.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/gallery-BkMS_-a4.js",
+			"/assets/gallery-DtVHcdkh.js",
 			"/assets/g2-C1_Izx0N.js",
-			"/assets/Reveal-D7jJ20Mf.js"
+			"/assets/Reveal-DTigf4bj.js"
 		]
 	}
 } });
