@@ -1,5 +1,11 @@
 {
   "version": 2,
   "buildCommand": "node ./scripts/fix-start-server-core.js && npm run build",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist/client",
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "/api/[...route]"
+    }
+  ]
 }
