@@ -1,17 +1,16 @@
-import serverModule from '../dist/server/server.js';
-
-const server = serverModule.default || serverModule;
-
 export default async (req: any, res: any) => {
   try {
+    // Dynamically import the server on each request to ensure fresh module
+    const { default: server } = await import('../dist/server/server.js');
+    
     const protocol = req.headers['x-forwarded-proto'] || 'https';
     const host = req.headers.host || req.headers['x-forwarded-host'] || 'localhost';
     const url = new URL(req.url, `${protocol}://${host}`);
     
-    if (!server || !server.fetch) {
-      console.error('Server module invalid:', { server, hasDefault: !!serverModule.default });
+    if (!server?.fetch) {
+      console.error('Server fetch method not found');
       res.statusCode = 500;
-      res.end('Server initialization failed');
+      res.end('Server error');
       return;
     }
 
@@ -26,12 +25,11 @@ export default async (req: any, res: any) => {
       res.setHeader(key, value);
     });
     
-    const body = await response.text();
-    res.end(body);
+    res.end(await response.text());
   } catch (error) {
-    console.error('Vercel API route error:', error);
+    console.error('API error:', error);
     res.statusCode = 500;
-    res.end('Internal Server Error');
+    res.end('Error');
   }
 };
 
